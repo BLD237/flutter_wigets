@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -27,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text('Your name is: $name'),
           ],
         ),
@@ -40,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
 class NameInputWidget extends StatefulWidget {
   final Function(String) onNameChanged;
 
-  NameInputWidget({required this.onNameChanged});
+  const NameInputWidget({super.key, required this.onNameChanged});
 
   @override
   _NameInputWidgetState createState() => _NameInputWidgetState();
@@ -60,7 +62,7 @@ class _NameInputWidgetState extends State<NameInputWidget> {
     return TextField(
       controller: _nameController,
       cursorColor: Colors.blue,
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         labelText: 'Enter your name',
       ),
       onChanged: (text) {
