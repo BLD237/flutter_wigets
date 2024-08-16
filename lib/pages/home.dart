@@ -13,7 +13,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text('Custom Widgets'),
+        title: const Text('Custom Widgets'),
       ),
       body: Center(
         
