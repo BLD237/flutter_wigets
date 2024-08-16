@@ -64,6 +64,7 @@ class _NameInputWidgetState extends State<NameInputWidget> {
       cursorColor: Colors.blue,
       decoration: const InputDecoration(
         labelText: 'Enter your name',
+        border: OutlineInputBorder()
       ),
       onChanged: (text) {
         widget.onNameChanged(text);
